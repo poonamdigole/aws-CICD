@@ -25,6 +25,10 @@ app.get('/about', (req, res) => {
     res.json({ msg: 'about page' })
 });
 
+app.get('/health', (req, res) => {
+    res.send( 'All is set up !' )
+});
+
 app.post('/dinner', (req, res)=>{
     const {name , food} = req.body;
 res.json({
